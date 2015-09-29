@@ -19,6 +19,10 @@ import javax.persistence.Table;
 @Table(name = "partner_comments", catalog = "projectwebservices")
 public class PartnerComments implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer partnerCommentsId;
 	private Customer customer;
 	private Partner partner;

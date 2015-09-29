@@ -24,6 +24,10 @@ import javax.persistence.Table;
 @Table(name = "product", catalog = "projectwebservices")
 public class Product implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer productId;
 	private Partner partner;
 	private ProductCategory productCategory;

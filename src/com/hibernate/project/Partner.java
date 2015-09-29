@@ -20,6 +20,10 @@ import javax.persistence.Table;
 @Table(name = "partner", catalog = "projectwebservices")
 public class Partner implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer partnerId;
 	private String partnerName;
 	private String partnerAddress;

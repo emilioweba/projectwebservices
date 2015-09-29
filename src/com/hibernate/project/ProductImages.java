@@ -19,6 +19,10 @@ import javax.persistence.Table;
 @Table(name = "product_images", catalog = "projectwebservices")
 public class ProductImages implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer productImagesId;
 	private Product product;
 	private String productImagesUrl;

@@ -22,6 +22,10 @@ import javax.persistence.Table;
 @Table(name = "customer_payment", catalog = "projectwebservices")
 public class CustomerPayment implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer customerPaymentId;
 	private Customer customer;
 	private String customerPaymentDescription;
