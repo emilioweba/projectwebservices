@@ -53,7 +53,8 @@ public class TestClass {
 		}
 		
 		rs.close();
-		
+		TestHelper.stmt.close();
+		TestHelper.conn.close();
 		//ER1
 		String expectedValue1 = "Lailson";
 		String actualValue1 = customerName;
@@ -112,7 +113,8 @@ public class TestClass {
 		}
 		
 		rs.close();
-		
+		TestHelper.stmt.close();
+		TestHelper.conn.close();
 		//ER1
 		String expectedValue1 = "6437 North Glenwood Avenue";
 		String actualValue1 = customerPaymentBilling;
@@ -153,7 +155,8 @@ public class TestClass {
 		}
 		
 		rs.close();
-		
+		TestHelper.stmt.close();
+		TestHelper.conn.close();
 		//ER1
 		String expectedValue1 = "Amazon";
 		String actualValue1 = partnerName;
@@ -213,7 +216,8 @@ public class TestClass {
 		}
 		
 		rs.close();
-		
+		TestHelper.stmt.close();
+		TestHelper.conn.close();
 		//ER1
 		String expectedValue1 = "TV Samsung";
 		String actualValue1 = productName;
@@ -271,7 +275,8 @@ public class TestClass {
 		}		
 		
 		rs.close();
-		
+		TestHelper.stmt.close();
+		TestHelper.conn.close();
 		//ER1
 		String expectedValue1 = "2015-09-27";
 		String actualValue1 = orderDate.toString();

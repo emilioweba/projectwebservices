@@ -4,16 +4,15 @@ import java.sql.*;
 public class TestHelper {
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/projectwebservices";
-
-	//  Database credentials
-	static final String USER = "root";
-	static final String PASS = "jgkb22";
+	static final String DB_URL = "jdbc:mysql://us-cdbr-azure-west-c.cloudapp.net:3306/projectwebservices";
+	
+	public static Connection conn = null;
+	public static Statement stmt = null;
+	public static ResultSet rs = null;	//  Database credentials
+	static final String USER = "bcfe38148e2425";
+	static final String PASS = "887cac00";
 	
 	public static ResultSet queryDatabase(String tableName){
-		Connection conn = null;
-		Statement stmt = null;
-		ResultSet rs = null;
 		try{
 			//STEP 2: Register JDBC driver
 			Class.forName("com.mysql.jdbc.Driver");
